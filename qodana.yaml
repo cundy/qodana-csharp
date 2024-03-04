@@ -1,0 +1,14 @@
+version: "1.0"
+linter: jetbrains/qodana-dotnet:2023.3
+failureConditions:
+  severityThresholds:
+    critical: 0
+    high: 0
+profile:
+  path: profile.yaml
+
+include:
+  - name: VulnerableLibrariesGlobal
+
+dotnet:
+  solution: AzureFunctionCSharpCrud.sln
