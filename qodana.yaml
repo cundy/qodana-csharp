@@ -1,0 +1,15 @@
+version: "1.0"
+linter: jetbrains/qodana-dotnet:latest
+failureConditions:
+  severityThresholds:
+    critical: 0
+    high: 0
+profile:
+  path: profile.yaml
+
+include:
+  - name: VulnerableLibrariesGlobal
+
+exclude:
+  - name: UnusedMember.Global
+  - name: UnusedMemberInSuper.Global
