@@ -1,0 +1,2 @@
+# qodana-csharp
+Qodana integration
