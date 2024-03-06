@@ -8,7 +8,7 @@ on:
       - 'releases/*'
 
 jobs:
-  qodana-scan:
+  qodana:
     name: Qodana Scan
     runs-on: ubuntu-latest
     permissions:
